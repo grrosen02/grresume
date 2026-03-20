@@ -60,8 +60,8 @@ export const gidgetCVData: CVData = {
         "Lead the full lifecycle of MAP's external relationships — from first contact through ongoing engagement — for clients, consultants, and interns.",
         "Built and maintain intern coordination infrastructure across multiple cohorts; actively delegating day-to-day logistics to a junior coordinator.",
         "Identified and qualified an international prospect (Austria), conducting discovery and translating willingness-to-pay insights into a pricing proposal for leadership.",
-        "Supported client retention and expansion by surfacing upsell opportunities; contributed to a voice-agent scope expansion with an existing client.",
-        "Applied AI tools (Claude, NotebookLM, agentic workflows) to internal operations and contributed to MAP's organizational upskilling initiatives."
+        "Support client retention and expansion by surfacing upsell opportunities; contributed to a voice-agent scope expansion with an existing client.",
+        "Apply AI tools (Claude, NotebookLM, agentic workflows) to internal operations and contributed to MAP's organizational upskilling initiatives."
       ]
     },
     {
@@ -70,8 +70,8 @@ export const gidgetCVData: CVData = {
       position: "AI Consultant",
       location: "",
       responsibilities: [
-        "Collaborate with co-founders to deliver client-facing AI and digital transformation solutions for SMEs, optimizing workflows and improving innovation strategies.",
-        "Conduct quantitative and qualitative analyses to evaluate customer processes, translating findings into strategic recommendations.",
+        "Collaborated with co-founders to deliver client-facing AI and digital transformation solutions for SMEs, optimizing workflows and improving innovation strategies.",
+        "Conducted quantitative and qualitative analyses to evaluate customer processes, translating findings into strategic recommendations.",
         "Developed end-to-end recruitment process and strategy leveraging AI technology, boosting candidate engagement and ensuring organizational scalability using automating tools."
       ]
     },
@@ -81,7 +81,7 @@ export const gidgetCVData: CVData = {
       position: "Ski Instructor",
       location: "Zell am See, Salzburg, Austria",
       responsibilities: [
-        "Facilitated lessons in German, French, Spanish, Dutch (50+ hours) and English, demonstrating cross-cultural leadership and language competency while prioritizing client needs and safety.",
+        "Facilitated lessons in Dutch (50+ hours), German, French, Spanish, and English, demonstrating cross-cultural leadership and language competency while prioritizing client needs and safety.",
         "Enhanced client experience by guiding guests through resort services and local insights."
       ]
     },
