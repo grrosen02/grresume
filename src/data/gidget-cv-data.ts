@@ -1,5 +1,5 @@
 import { CVData } from '../components/CVFrame';
-import profileImage from 'figma:asset/4dcfa99cec9c6c7fa2507e49867172f91c8fc152.png';
+import profileImage from '../assets/4dcfa99cec9c6c7fa2507e49867172f91c8fc152.jpg';
 
 export const gidgetCVData: CVData = {
   personalInfo: {
