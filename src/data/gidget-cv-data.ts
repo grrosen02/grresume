@@ -65,7 +65,7 @@ export const gidgetCVData: CVData = {
       ]
     },
     {
-      dateRange: { start: "02/2025", end: "03/2026" },
+      dateRange: { start: "03/2025", end: "03/2026" },
       company: "",
       position: "AI Consultant",
       location: "",
