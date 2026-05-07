@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export interface ContactInfo {
@@ -28,6 +29,7 @@ export interface Experience {
   company: string;
   position: string;
   location: string;
+  note?: string;
   responsibilities: string[];
 }
 
@@ -60,7 +62,11 @@ interface CVFrameProps {
 export function CVFrame({ data }: CVFrameProps) {
   return (
     <div className="min-h-screen bg-white py-4 font-serif print-container">
-      <div className="max-w-4xl mx-auto bg-white print-page">
+      <div className="max-w-4xl mx-auto bg-white print-page relative overflow-hidden">
+        {/* Decorative teal elements */}
+        <div className="absolute top-0 right-0 w-16 h-16 bg-teal-700 transform rotate-45 translate-x-8 -translate-y-8"></div>
+        <div className="absolute top-8 right-8 w-8 h-8 bg-teal-700 transform rotate-45"></div>
+        <div className="absolute top-16 right-16 w-4 h-4 bg-teal-700 transform rotate-45"></div>
         <div className="flex">
           {/* Left Sidebar */}
           <div className="w-[30%] bg-white p-4 print-sidebar">
@@ -110,13 +116,16 @@ export function CVFrame({ data }: CVFrameProps) {
                 <div key={index} className="mb-1 print-small-gap">
                   <h3 className="text-teal-700 mb-0 text-sm">{languageGroup.level}:</h3>
                   <p className="text-xs text-gray-700 print-text">
-                    {languageGroup.languages.map((lang, langIndex) => 
-                      lang.includes('<strong>') ? (
-                        <span key={langIndex} dangerouslySetInnerHTML={{ __html: lang }} />
-                      ) : (
-                        lang
-                      )
-                    ).reduce((prev, curr, i) => [prev, i > 0 ? ', ' : '', curr])}
+                    {languageGroup.languages.map((lang, langIndex) => (
+                      <Fragment key={langIndex}>
+                        {langIndex > 0 && ', '}
+                        {lang.includes('<strong>') ? (
+                          <span dangerouslySetInnerHTML={{ __html: lang }} />
+                        ) : (
+                          lang
+                        )}
+                      </Fragment>
+                    ))}
                   </p>
                 </div>
               ))}
@@ -140,11 +149,7 @@ export function CVFrame({ data }: CVFrameProps) {
           </div>
 
           {/* Right Content */}
-          <div className="w-[70%] p-4 relative print-content">
-            {/* Decorative teal elements */}
-            <div className="absolute top-0 right-0 w-16 h-16 bg-teal-700 transform rotate-45 translate-x-8 -translate-y-8"></div>
-            <div className="absolute top-8 right-8 w-8 h-8 bg-teal-700 transform rotate-45"></div>
-            <div className="absolute top-16 right-16 w-4 h-4 bg-teal-700 transform rotate-45"></div>
+          <div className="w-[70%] p-4 print-content">
 
             {/* Name */}
             <div className="mb-4 print-subsection">
@@ -189,6 +194,7 @@ export function CVFrame({ data }: CVFrameProps) {
                     <div>
                       {(exp.company || exp.location) && <h3 className="text-teal-700 text-sm print-job-title">{exp.company}{exp.company && exp.location ? ', ' : ''}{exp.location}</h3>}
                       <p className="text-gray-600 text-xs mb-1 print-text"><strong>{exp.position}</strong></p>
+                      {exp.note && <p className="text-gray-400 text-xs italic mb-1 print-text">{exp.note}</p>}
                       <ul className="text-gray-500 text-xs space-y-0 print-bullets">
                         {exp.responsibilities.map((responsibility, respIndex) => (
                           <li key={respIndex}>• {responsibility}</li>

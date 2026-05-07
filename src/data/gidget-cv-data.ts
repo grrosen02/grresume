@@ -65,10 +65,11 @@ export const gidgetCVData: CVData = {
       ]
     },
     {
-      dateRange: { start: "02/2025", end: "12/2025" },
+      dateRange: { start: "02/2025", end: "03/2026" },
       company: "",
       position: "AI Consultant",
       location: "",
+      note: "concurrent with Ski Instructor roles",
       responsibilities: [
         "Collaborated with co-founders to deliver client-facing AI and digital transformation solutions for SMEs, optimizing workflows and improving innovation strategies.",
         "Conducted quantitative and qualitative analyses to evaluate customer processes, translating findings into strategic recommendations.",
@@ -80,6 +81,7 @@ export const gidgetCVData: CVData = {
       company: "Skischule Sport Alpin",
       position: "Ski Instructor",
       location: "Zell am See, Salzburg, Austria",
+      note: "concurrent with AI Consultant role at MyAiPathways",
       responsibilities: [
         "Facilitated lessons in Dutch (50+ hours), German, French, Spanish, and English, demonstrating cross-cultural leadership and language competency while prioritizing client needs and safety.",
         "Enhanced client experience by guiding guests through resort services and local insights."
@@ -90,6 +92,7 @@ export const gidgetCVData: CVData = {
       company: "Skischule Hartweger",
       position: "Ski Instructor",
       location: "Kaprun, Salzburg, Austria",
+      note: "concurrent with AI Consultant role at MyAiPathways",
       responsibilities: [
         "Facilitated lessons in German, French, and English, demonstrating cross-cultural leadership while prioritizing client needs and safety.",
         "Enhanced client experience by guiding guests through resort services and local insights."
@@ -111,9 +114,9 @@ export const gidgetCVData: CVData = {
       position: "Intern",
       location: "Berlin, Germany",
       responsibilities: [
-        "Worked in a German-speaking workplace to manage participants of the Congress-Bundestag Youth Exchange",
+        "Worked in a German-speaking workplace to manage participants of the Congress-Bundestag Youth Exchange.",
         "Analyzed institutional data from 150+ participants to optimize program placement for 70+ U.S. participants in German universities.",
-        "Synthesized feedback from 150+ former participants into a two-page executive summary and impact assessment"
+        "Synthesized feedback from 150+ former participants into a two-page executive summary and impact assessment."
       ]
     }
   ],
