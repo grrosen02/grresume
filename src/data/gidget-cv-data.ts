@@ -20,11 +20,11 @@ export const gidgetCVData: CVData = {
     },
     {
       level: "C1",
-      languages: ["French", "German"]
+      languages: ["<strong>Dutch</strong>", "French", "German"]
     },
     {
       level: "B2",
-      languages: ["<strong>Dutch</strong>","Spanish"]
+      languages: ["Spanish"]
     },
     {
       level: "A2",
